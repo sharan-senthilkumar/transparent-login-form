@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+        body{
+            background-image: url('scenery.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Salsa', cursive;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="flex flex-col p-5  text-white border rounded-3xl border-white backdrop-blur-xl relative">
+        <h3 class="text-3xl font-bold text-center mb-4">Login</h3>
+        
+        <div class="relative mb-3">
+            <input type="text" placeholder="UserName" class="p-3 pl-8 bg-transparent border rounded-3xl placeholder:text-white border-white w-full">
+            <svg class="h-5 w-5 absolute top-1/2 left-2 transform -translate-y-1/2 text-white" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" fill="white">
+                <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+            </svg>
+        </div>
+        
+        <div class="relative mb-3">
+            <input type="password" placeholder="Password" class="p-3 pl-8 bg-transparent border rounded-3xl placeholder:text-white border-white w-full ">
+            <svg class="h-5 w-5 absolute top-1/2 left-2 transform -translate-y-1/2 text-white"  xmlns="http://www.w3.org/2000/svg" height="16" width="16" fill="white" viewBox="0 0 512 512">
+                <path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/>
+            </svg>
+        </div>
+
+        <label class="mb-2">
+            <input type="checkbox" class="mr-2 text-center">Agree to the <span><a href="#" class="hover:underline transition duration-300 ease-out"> terms and conditions </a></span>
+        </label>
+        <button class="bg-transparent text-white font-bold text-lg px-4 py-2 border border-white rounded-3xl hover:text-black hover:bg-white transition duration-300 ease-out">Login</button>
+        <p class="mt-2 text-center">Unable to login? <span><a href="#" class="hover:underline hover:transition duration-300 ease-out">Reset Password</a></span></p>
+        
+    </div>
+</body>
+</html>
